@@ -60,11 +60,11 @@ label:
 				       	       scanf(" %c",&a);
 				               if(('Y'==a)||('y'==a))
 					       {
-					       printf("ENTER NAME:");
+					       printf("Enter Name:");
 					       scanf(" %[^\n]",temp->name);
-					       printf("ENTER MARK:");
+					       printf("Enter Mark:");
 					       scanf("%f",&temp->mark);
-					       printf("SUCCESSFULLY MODIFIED\n");}
+					       printf("Successfully Modified\n");}
 					       return;
 				       }
 				       temp=temp->next;
