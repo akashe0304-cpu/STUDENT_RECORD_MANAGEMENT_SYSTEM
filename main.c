@@ -22,10 +22,11 @@ label:
 	} 
 exit:
 	printf("BACK:Y/y\n");
+exit1:
 	scanf(" %c",&op);
 	if(('y'==op)||('Y'==op))
 		goto label;
 	else{
 		printf("press-Y ");
-		goto exit;}
+		goto exit1;}
 }
