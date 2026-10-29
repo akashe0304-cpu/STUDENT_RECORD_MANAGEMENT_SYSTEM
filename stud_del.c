@@ -38,7 +38,7 @@ label:
 		       break;
 		       
 		case 2:printf("Enter The Name:");
-		       scanf("%s",name);
+		       scanf(" %[^\n]",name);
 		       while(temp!=NULL)
 		       {
 			       if(strcmp(name,temp->name)==0)
