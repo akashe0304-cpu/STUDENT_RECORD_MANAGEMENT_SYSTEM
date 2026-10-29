@@ -7,16 +7,16 @@ void del(ST**ptr)
 	printf("[1]Delete using Roll Number\n[2]Delete using Name\n");
 	printf("Enter your choice:");
 	scanf("%d",&op);
-label:
 	ST*temp=(*ptr),(*prv);
+label:
 	switch(op){
 		case 1:printf("Enter Roll No:");
 		       scanf("%d",&n);
+		       temp=(*ptr);
 		       while(temp!=NULL)
 		       {
 			       if(n==temp->roll)
 			       {
-				       printf("Roll:%d\tName:%s\tMark:%.2f\n",temp->roll,temp->name,temp->mark);
 				       printf("Conform if you want to delete y/n:");
 				       scanf(" %c",&c);
 				       if(('Y'==c)||('y'==c)){
@@ -62,4 +62,3 @@ label:
 
 
 }
-
