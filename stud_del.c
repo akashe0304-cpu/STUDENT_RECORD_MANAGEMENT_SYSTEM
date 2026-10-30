@@ -3,7 +3,7 @@ void del(ST**ptr)
 {
 	int n,cnt=0;
 	char name[20],c;
-	char op;
+	int op;
 	printf("[1]Delete using Roll Number\n[2]Delete using Name\n");
 	printf("Enter your choice:");
 	scanf("%d",&op);
