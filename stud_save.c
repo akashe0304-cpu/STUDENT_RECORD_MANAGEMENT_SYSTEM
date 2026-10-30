@@ -7,11 +7,11 @@ void save(ST*ptr)
 	}
 	FILE*fs=fopen("student","w");
 	fprintf(fs,"--------------------------------------------------\n");
-	fprintf(fs,"Roll\t\tName\t\tMark\n");
+	fprintf(fs,"%-10s %-20s %-5s","Roll","Name","Mark\n");
 	fprintf(fs,"--------------------------------------------------\n");
 	while(ptr!=NULL)
 	{
-		fprintf(fs,"%d\t\t%s\t\t%.2f\n",ptr->roll,ptr->name,ptr->mark);
+		fprintf(fs,"%-10d %-20s %-5.2f\n",ptr->roll,ptr->name,ptr->mark);
 		ptr=ptr->next;
 	}
 	fclose(fs);
