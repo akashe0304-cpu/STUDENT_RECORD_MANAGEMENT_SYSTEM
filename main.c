@@ -2,6 +2,7 @@
 int main()
 {
 	int op;
+	char ch;
 	int cnt=101;
 	ST*hptr=NULL;
 label:
@@ -23,8 +24,8 @@ label:
 exit:
 	printf("BACK:Y/y\n");
 exit1:
-	scanf(" %c",&op);
-	if(('y'==op)||('Y'==op))
+	scanf(" %c",&ch);
+	if(('y'==ch)||('Y'==ch))
 		goto label;
 	else{
 		printf("press-Y ");
