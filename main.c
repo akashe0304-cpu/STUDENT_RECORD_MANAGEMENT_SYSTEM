@@ -5,6 +5,7 @@ int main()
 	char ch;
 	int cnt=101;
 	ST*hptr=NULL;
+	load(&hptr,&cnt);
 label:
 	printf("**********STUDENT RECORD MENU*************\n");
 	printf("\t[1]:Add New Record\n\t[2]:Delete a Record\n\t[3]:Show the List\n\t[4]:Modify a Record\n\t[5]:Save\n\t[6]:Sort the list\n\t[7]:Exit\n");
