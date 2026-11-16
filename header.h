@@ -15,3 +15,4 @@ void modify(ST**);
 void sort(ST**,ST*);
 void save(ST*);
 void ex(ST*);
+void load(ST**,int*);
